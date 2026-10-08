@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  labels:
+    app.kubernetes.io/part-of: starter-app
+data:
+  SPRING_DATA_MONGODB_URI: "mongodb://mongodb-service:27017/user_db"
+  PORT: "3000"
+  NEXT_PUBLIC_API_URL: ""
